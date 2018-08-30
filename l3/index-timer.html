@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue l3 timer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="vue.js"></script>
+    <style>
+        .wrapper{
+            padding: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div id="l3_timer">
+        <div v-timer:1000.5="onTimer">1</div>
+        <div v-timer:1000.5.run="onTimer">2</div>
+        <div v-timer:1000="onTimer">3</div>
+    </div>
+</div>
+<script src="v_timer.js"></script>
+</body>
+</html>
